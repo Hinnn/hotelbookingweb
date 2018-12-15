@@ -1,0 +1,12 @@
+[
+  {
+    "_id": "5bc3c6f501838a05932421c2",
+    "customerID": 100000006,
+    "paymenttype": "Master",
+    "date": 20181016,
+    "amount": 1,
+    "roomNum": "301",
+    "price": 30,
+    "__v": 0
+  }
+]

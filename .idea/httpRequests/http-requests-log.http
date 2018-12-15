@@ -1,0 +1,536 @@
+DELETE http://localhost:3000/bookings/5bc3c6f501838a05932421c2
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"password":"shaw123"}
+
+<> 2018-10-25T115941.200.json
+
+###
+
+PUT http://localhost:3000/bookings/5bc3c6f501838a05932421c2/amount
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"password":"shaw123"}
+
+<> 2018-10-25T115933.200.json
+
+###
+
+GET http://localhost:3000/bookings/5bc3c6f501838a05932421c2
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"password":"shaw123"}
+
+<> 2018-10-25T115922.200.json
+
+###
+
+GET http://localhost:3000/bookings/5bc3c6f501838a05932421c2
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"password":"shaw123"}
+
+<> 2018-10-25T115921.200.json
+
+###
+
+GET http://localhost:3000/bookings
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"password":"shaw123"}
+
+<> 2018-10-25T115912.200.json
+
+###
+
+GET http://localhost:3000/rooms
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"password":"shaw123"}
+
+<> 2018-10-25T115904.200.json
+
+###
+
+GET http://localhost:3000/rooms'
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"password":"shaw123"}
+
+<> 2018-10-25T115902.404.html
+
+###
+
+GET http://localhost:3000/rooms/5bcb2e48165973035f349662
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"password":"shaw123"}
+
+<> 2018-10-25T115859.200.json
+
+###
+
+DELETE http://localhost:3000/rooms/5bcb2e48165973035f349662
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"password":"shaw123"}
+
+<> 2018-10-25T115855.200.json
+
+###
+
+GET http://localhost:3000/rooms
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"password":"shaw123"}
+
+<> 2018-10-25T115841.200.json
+
+###
+
+PUT http://localhost:3000/rooms/5bcb2e48165973035f349662/price
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"password":"shaw123"}
+
+<> 2018-10-25T115835.200.json
+
+###
+
+PUT http://localhost:3000/rooms/5bcb2e48165973035f349662
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"password":"shaw123"}
+
+<> 2018-10-25T115830.404.html
+
+###
+
+GET http://localhost:3000/rooms
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"password":"shaw123"}
+
+<> 2018-10-25T115812.200.json
+
+###
+
+GET http://localhost:3000/customers
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"password":"shaw123"}
+
+<> 2018-10-25T115801.200.json
+
+###
+
+DELETE http://localhost:3000/customers/5bcee7e7d9af9602c6c9dc40
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"password":"shaw123"}
+
+<> 2018-10-25T115754.200.json
+
+###
+
+GET http://localhost:3000/customers
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"password":"shaw123"}
+
+<> 2018-10-25T115740.200.json
+
+###
+
+GET http://localhost:3000/customers
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"password":"shaw123"}
+
+<> 2018-10-24T075055.200.json
+
+###
+
+DELETE http://localhost:3000/customers/5bc9a1059c0b64030c0d4f9f
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"password":"shaw123"}
+
+<> 2018-10-24T075048.200.json
+
+###
+
+GET http://localhost:3000/customers
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"password":"shaw123"}
+
+<> 2018-10-24T075034.200.json
+
+###
+
+POST http://localhost:3000/customers/shaw@gmail.c
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"password":"shaw123"}
+
+<> 2018-10-24T075020.200.json
+
+###
+
+POST http://localhost:3000/customers/shaw@gmail.com
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"password":"shaw3"}
+
+<> 2018-10-24T075012.200.json
+
+###
+
+POST http://localhost:3000/customers/shaw@gmail.com
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"password":"shaw123"}
+
+<> 2018-10-24T075005.200.json
+
+###
+
+POST http://localhost:3000/customers
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"customerID":1000290,"name":"Shaw","email":"shaw@gmail.com","password":"shaw123"}
+
+<> 2018-10-24T074939.200.json
+
+###
+
+GET http://localhost:3000/customers/10000091
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"roomNum":"202","price":30,"type":"double"}
+
+<> 2018-10-24T074816.200.json
+
+###
+
+GET http://localhost:3000/customers
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"roomNum":"202","price":30,"type":"double"}
+
+<> 2018-10-24T074807.200.json
+
+###
+
+GET http://localhost:3000/rooms
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"roomNum":"202","price":30,"type":"double"}
+
+<> 2018-10-24T074755.200.json
+
+###
+
+DELETE http://localhost:3000/rooms/5bd0be3f8703d41dddee170b
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"roomNum":"202","price":30,"type":"double"}
+
+<> 2018-10-24T074749.200.json
+
+###
+
+GET http://localhost:3000/rooms
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"roomNum":"202","price":30,"type":"double"}
+
+<> 2018-10-24T074732.200.json
+
+###
+
+POST http://localhost:3000/rooms
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"roomNum":"202","price":30,"type":"double"}
+
+<> 2018-10-24T074727.200.json
+
+###
+
+GET http://localhost:3000/rooms/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"customerID":0,"paymenttype":"Direct","date":20181203,"amount":1,"roomNum":"303","price":30}
+
+<> 2018-10-24T074640.200.json
+
+###
+
+PUT http://localhost:3000/rooms/5bc3bc94fb6fc0602745615a/price
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"customerID":0,"paymenttype":"Direct","date":20181203,"amount":1,"roomNum":"303","price":30}
+
+<> 2018-10-24T074633.200.json
+
+###
+
+GET http://localhost:3000/rooms/103
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"customerID":0,"paymenttype":"Direct","date":20181203,"amount":1,"roomNum":"303","price":30}
+
+<> 2018-10-24T074617.200.json
+
+###
+
+GET http://localhost:3000/rooms
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"customerID":0,"paymenttype":"Direct","date":20181203,"amount":1,"roomNum":"303","price":30}
+
+<> 2018-10-24T074610.200.json
+
+###
+
+GET http://localhost:3000/bookings/amount
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"customerID":0,"paymenttype":"Direct","date":20181203,"amount":1,"roomNum":"303","price":30}
+
+<> 2018-10-24T074603.200.json
+
+###
+
+GET http://localhost:3000/bookings
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"customerID":0,"paymenttype":"Direct","date":20181203,"amount":1,"roomNum":"303","price":30}
+
+<> 2018-10-24T074551.200.json
+
+###
+
+POST http://localhost:3000/bookings/10009340
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"customerID":0,"paymenttype":"Direct","date":20181203,"amount":1,"roomNum":"303","price":30}
+
+<> 2018-10-24T074542.200.json
+
+###
+
+GET http://localhost:3000/bookings/5bcee6ecd9af9602c6c9dc3e
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-24T074511.200.json
+
+###
+
+PUT http://localhost:3000/bookings/5bcee6ecd9af9602c6c9dc3e/amount
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-24T074505.200.json
+
+###
+
+GET http://localhost:3000/bookings
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-24T074443.200.json
+
+###
+
+DELETE http://localhost:3000/bookings/5bc3c04c7bff3205638b8ea1
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-24T074438.200.json
+
+###
+
+GET http://localhost:3000/bookings/5bc3c04c7bff3205638b8ea1
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-24T074431.200.json
+
+###
+
+GET http://localhost:3000/bookings
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-24T074422.200.json
+
+###
+
+PUT http://localhost:3000/rooms/5bc3bc94fb6fc0602745615a/price
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"customerID":0,"paymenttype":"Direct","date":20181203,"amount":1,"roomNum":"203","price":30}
+
+<> 2018-10-24T074325.200.json
+
+###
+
+GET http://localhost:3000/rooms/5bc3bc94fb6fc0602745615a/price
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"customerID":0,"paymenttype":"Direct","date":20181203,"amount":1,"roomNum":"203","price":30}
+
+<> 2018-10-24T074314.404.html
+
+###
+
+GET http://localhost:3000/rooms/103
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"customerID":0,"paymenttype":"Direct","date":20181203,"amount":1,"roomNum":"203","price":30}
+
+<> 2018-10-24T074300.200.json
+
+###
+
+GET http://localhost:3000/rooms
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"customerID":0,"paymenttype":"Direct","date":20181203,"amount":1,"roomNum":"203","price":30}
+
+<> 2018-10-24T074253.200.json
+
+###
+
+GET http://localhost:3000/bookings/amount
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"customerID":0,"paymenttype":"Direct","date":20181203,"amount":1,"roomNum":"203","price":30}
+
+<> 2018-10-24T074245.200.json
+
+###
+
+GET http://localhost:3000/bookings
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"customerID":0,"paymenttype":"Direct","date":20181203,"amount":1,"roomNum":"203","price":30}
+
+<> 2018-10-24T074230.200.json
+
+###
+
+POST http://localhost:3000/bookings/10000034
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"customerID":0,"paymenttype":"Direct","date":20181203,"amount":1,"roomNum":"203","price":30}
+
+<> 2018-10-24T074223.200.json
+
+###
+
+GET http://localhost:3000/bookings/5bc3c04c7bff3205638b8ea1
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2018-10-24T074045.200.json
+
+###
+

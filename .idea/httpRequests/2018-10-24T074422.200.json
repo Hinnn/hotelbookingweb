@@ -1,0 +1,52 @@
+[
+  {
+    "_id": "5bc3c04c7bff3205638b8ea1",
+    "customerID": 100000011,
+    "paymenttype": "PayPal",
+    "date": 20181030,
+    "amount": 3,
+    "roomNum": "203",
+    "price": 40,
+    "__v": 0
+  },
+  {
+    "_id": "5bc3c6f501838a05932421c2",
+    "customerID": 100000006,
+    "paymenttype": "Master",
+    "date": 20181016,
+    "amount": 1,
+    "roomNum": "301",
+    "price": 30,
+    "__v": 0
+  },
+  {
+    "_id": "5bcee6ecd9af9602c6c9dc3e",
+    "customerID": 1000202,
+    "paymenttype": "Visa",
+    "date": 20181029,
+    "amount": 1,
+    "roomNum": "102",
+    "price": 30,
+    "__v": 0
+  },
+  {
+    "_id": "5bd0b9bfd338361db8663ab0",
+    "customerID": 10000323,
+    "paymenttype": "Master",
+    "date": 20181030,
+    "amount": 1,
+    "roomNum": "201",
+    "price": 35,
+    "__v": 0
+  },
+  {
+    "_id": "5bd0bd0ffd17731dd7eb8761",
+    "customerID": 10000034,
+    "paymenttype": "Direct",
+    "date": 20181203,
+    "amount": 1,
+    "roomNum": "203",
+    "price": 30,
+    "__v": 0
+  }
+]

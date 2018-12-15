@@ -1,0 +1,26 @@
+[
+  {
+    "_id": "5bc9a1059c0b64030c0d4f9f",
+    "customerID": 10000091,
+    "name": "Tina",
+    "email": "ycell123@qq.com",
+    "password": "123y45",
+    "__v": 0
+  },
+  {
+    "_id": "5bcee7e7d9af9602c6c9dc40",
+    "customerID": 10000900,
+    "name": "Elian",
+    "email": "6737@qq.com",
+    "password": "123yyy",
+    "__v": 0
+  },
+  {
+    "_id": "5bd0bab7d338361db8663ab2",
+    "customerID": 10000920,
+    "name": "Yvette",
+    "email": "Yvette@wit.ie",
+    "password": "21323",
+    "__v": 0
+  }
+]
