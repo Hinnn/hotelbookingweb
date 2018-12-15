@@ -7,7 +7,8 @@ let router = express.Router();
 
 let mongodbUri ='mongodb://YueWang:donations999d>@ds231374.mlab.com:31374/heroku_m89b254b';
 
-mongoose.connect(mongodbUri);
+
+mongoose.connect(mongodbUri,{ useNewUrlParser: true });
 
 //mongoose.connect('mongodb://localhost:27017/bookingsdb');
 
