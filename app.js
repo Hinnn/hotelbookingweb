@@ -11,7 +11,7 @@ const bookings = require("./routes/bookings");
 const rooms = require("./routes/rooms");
 const customers = require("./routes/customers");
 var app = express();
-
+var cors = require('cors');
 var port = process.env.PORT || 3000;
 app.listen(port, function () {
     console.log("running at localhost:" + port);
@@ -25,7 +25,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
+app.use(cors());
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
