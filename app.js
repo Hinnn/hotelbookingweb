@@ -33,25 +33,25 @@ app.use('/users', usersRouter);
 
 app.get('/bookings', bookings.findAll);
 app.get('/bookings/amount', bookings.findTotalAmount);
-app.get('/bookings/:id', bookings.findOne);
+app.get('/bookings/:customerID', bookings.findOne);
 
-app.put('/bookings/:id/amount', bookings.incrementAmount);
+app.put('/bookings/:customerID/amount', bookings.incrementAmount);
 
-app.post('/bookings/:customerID',bookings.addBooking);
+app.post('/bookings',bookings.addBooking);
 
-app.delete('/bookings/:id', bookings.deleteBooking);
+app.delete('/bookings/:customerID', bookings.deleteBooking);
 
 //operations on rooms
 app.get('/rooms', rooms.findAll);
 //app.get('/rooms/:amount', rooms.findTotalAmount);
 app.get('/rooms/:roomNum', rooms.findOne);
 
-app.put('/rooms/:id/price', rooms.incrementPrice);
+app.put('/rooms/:roomNum/price', rooms.incrementPrice);
 
 
 app.post('/rooms',rooms.addRoom);
 
-app.delete('/rooms/:id', rooms.deleteRoom);
+app.delete('/rooms/:roomNum', rooms.deleteRoom);
 
 
 //operations on customers
@@ -64,6 +64,7 @@ app.get('/customers', customers.findAll);
 app.get('/customers/:customerID', customers.findOne);
 
 //app.post('/customers',customers.addCustomer);
+app.put('/customers/:customerID', customers.Edit);
 
 app.delete('/customers/:customerID', customers.deleteCustomer);
 

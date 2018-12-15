@@ -42,8 +42,15 @@ router.findOne = (req, res) => {
     else
         res.send('Booking NOT Found!!');
     // Then either return the found donation or a suitable error message*/
-    Booking.find({ "_id" : req.params.id},function(err, booking) {
-   // Booking.find({ "_id" : req.params._id },function(err, booking) {
+   //  Booking.find({ "_id" : req.params.id},function(err, booking) {
+   // // Booking.find({ "_id" : req.params._id },function(err, booking) {
+   //      if (err)
+   //          res.json({ message: 'Booking NOT Found!', errmsg : err } );
+   //      else
+   //          res.send(JSON.stringify(booking,null,5));
+   //  });
+    Booking.find({ "customerID" : req.params.customerID},function(err, booking) {
+        // Booking.find({ "_id" : req.params._id },function(err, booking) {
         if (err)
             res.json({ message: 'Booking NOT Found!', errmsg : err } );
         else
@@ -95,7 +102,7 @@ router.addBooking = (req, res) => {
     });
 }
 
-router.incrementAmount = (req, res) => {
+/*router.incrementAmount = (req, res) => {
     // Find the relevant booking based on params id passed in
     // Add 1 to orders property of the selected booking based on its id
 
@@ -112,7 +119,37 @@ router.incrementAmount = (req, res) => {
             });
         }
     });
-}
+}*/
+router.incrementAmount = (req, res) => {
+
+    // Find the relevant booking based on params id passed in
+
+    res.setHeader('Content-Type', 'application/json');
+    let booking = new Booking({
+        //customerID: req.body.customerID,
+        paymenttype: req.body.paymenttype,
+        date: req.body.date,
+        amount: req.body.amount,
+        roomNum: req.body.roomNum,
+        //price: req.body.price
+
+    });
+    Booking.update({"customerID": req.params.customerID},
+        {
+            paymenttype: req.body.paymenttype,
+            date: req.body.date,
+            amount: req.body.amount,
+            roomNum: req.body.roomNum,
+            //price: req.body.price
+        },
+        function (err, booking) {
+            if (err)
+                res.json({message: 'Booking Not Edited', errmsg: err});
+            else
+                res.json({message: 'Booking Edited successfully', data: booking});
+        });
+};
+
 
 router.deleteBooking = (req, res) => {
     /*Delete the selected booking based on its id
@@ -124,11 +161,23 @@ router.deleteBooking = (req, res) => {
         res.json({ message: 'Booking Deleted!'});
     else
         res.json({ message: 'Booking NOT Deleted!'});*/
-    Booking.findByIdAndRemove(req.params.id, function(err) {
+    /*Booking.findByIdAndRemove(req.params.id, function(err) {
         if (err)
             res.json({ message: 'Booking NOT DELETED!', errmsg : err } );
         else
             res.json({ message: 'Booking Successfully Deleted!'});
+    });*/
+    Booking.findOneAndRemove({customerID:req.params.customerID}, function (err) {
+        //Booking.findByIdAndRemove({id:req.params.id},function (err){
+        if (!err) {
+            //res.json({message: 'Booking NOT Found!', errmsg: err});
+            //console.log(booking.customerID + "deleted");
+            res.json({message: 'Booking Successfully Deleted!'});
+        }
+        else
+        //remove(req.params.customerID);
+        //res.json({message: 'Booking Successfully Deleted!'});
+            res.json({message: 'Booking NOT Found!', errmsg: err});
     });
 }
 

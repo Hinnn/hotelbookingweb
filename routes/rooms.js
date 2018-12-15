@@ -71,7 +71,7 @@ router.incrementPrice = (req, res) => {
     // Find the relevant booking based on params id passed in
     // Add 1 to orders property of the selected booking based on its id
 
-    Room.findById(req.params.id, function(err,room) {
+   /* Room.findById(req.params.id, function(err,room) {
         if (err)
             res.json({ message: 'Room NOT Found!', errmsg : err } );
         else {
@@ -84,17 +84,48 @@ router.incrementPrice = (req, res) => {
             });
         }
     });
-}
+}*/
+    res.setHeader('Content-Type', 'application/json');
+    let room = new Room({
+
+        roomNum: req.body.roomNum,
+        price: req.body.price,
+        type: req.body.type
+
+    });
+    Room.update({"roomNum": req.params.roomNum},
+        {
+            price: req.body.price,
+            type: req.body.type
+        },
+        function (err, room) {
+            if (err)
+                res.json({message: 'Room Not Edited', errmsg: err});
+            else
+                res.json({message: 'Room Edited successfully', data: room});
+        });
+};
+
 router.deleteRoom = (req, res) => {
 
-    Room.findByIdAndRemove(req.params.id, function (err) {
+   /* Room.findByIdAndRemove(req.params.id, function (err) {
 
         if (err)
             res.json({message: 'Room NOT DELETED!', errmsg: err});
         else
             res.json({message: 'Room Successfully Deleted!'});
+    });*/
+    Room.findOneAndRemove({roomNum:req.params.roomNum}, function (err) {
+        if (!err) {
+            res.json({message: 'Room Successfully Deleted!'});
+        }
+        else
+
+            res.json({message: 'Room NOT Found!', errmsg: err});
     });
-}
+
+};
+
     /*function getTotalAmount(array) {
         let totalAmount = 0;
         array.forEach(function(obj) { totalAmount += obj.length; });

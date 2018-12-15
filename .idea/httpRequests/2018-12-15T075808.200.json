@@ -1,0 +1,29 @@
+[
+  {
+    "_id": "5c0c36f7fb6fc04dd6e85cca",
+    "customerID": 1000202,
+    "paymenttype": "Visa",
+    "date": 20181029,
+    "amount": 1,
+    "roomNum": "102",
+    "price": 30
+  },
+  {
+    "_id": "5c0c3708fb6fc04dd6e85cce",
+    "customerID": 10009340,
+    "paymenttype": "Direct",
+    "date": 20181203,
+    "amount": 1,
+    "roomNum": "303",
+    "price": 30
+  },
+  {
+    "_id": "5c0c49ed2d8bbd0daaa63afc",
+    "customerID": 2132221,
+    "paymenttype": "Master",
+    "date": 20180101,
+    "amount": 1,
+    "roomNum": "101",
+    "__v": 0
+  }
+]

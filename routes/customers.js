@@ -93,7 +93,30 @@ function getByValue(array, customerID) {
     return result ? result[0] : null; // or undefined
 }
 
+router.Edit = (req, res) => {
 
+    // Find the relevant booking based on params id passed in
+
+    res.setHeader('Content-Type', 'application/json');
+    let customer = new Customer({
+        //customerID: req.body.customerID,
+        name: req.body.name,
+        email: req.body.email,
+        password: req.body.password
+    });
+    Customer.update({"customerID": req.params.customerID},
+        {
+            name: req.body.name,
+            email: req.body.email,
+            password: req.body.password
+        },
+        function (err, customer) {
+            if (err)
+                res.json({message: 'Customer Not Edited', errmsg: err});
+            else
+                res.json({message: 'Customer Edited successfully', data: customer});
+        });
+};
 
 router.deleteCustomer = (req, res) => {
     /*Delete the selected booking based on its id
@@ -106,13 +129,24 @@ router.deleteCustomer = (req, res) => {
         res.json({ message: 'Customer Deleted!'});
     else
         res.json({ message: 'Customer NOT Deleted!'});
-}*/
+}
     Customer.findByIdAndRemove(req.params.customerID, function(err){
     if(err)
         res.json({message: 'Customer not deleted!', errmsg :err});
     else
         res.json({ message: 'Customer Deleted Successfully!'});
 });
+}*/
+    Customer.findOneAndRemove({customerID:req.params.customerID}, function (err) {
+        if (!err) {
+
+            res.json({message: 'Customer Successfully Deleted!'});
+        }
+        else
+        //remove(req.params.customerID);
+        //res.json({message: 'Booking Successfully Deleted!'});
+            res.json({message: 'Customer NOT Found!', errmsg: err});
+    });
 }
 
 

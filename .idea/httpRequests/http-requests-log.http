@@ -1,3 +1,113 @@
+GET http://localhost:3000/bookings/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"password":"shaw123"}
+
+<> 2018-12-15T075808.200.json
+
+###
+
+GET http://localhost:3000/bookings/10000323
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"password":"shaw123"}
+
+<> 2018-12-15T075807.200.json
+
+###
+
+GET http://localhost:3000/bookings/10000323
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"password":"shaw123"}
+
+<> 2018-12-15T075806.200.json
+
+###
+
+GET http://localhost:3000/bookings/10000323
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"password":"shaw123"}
+
+<> 2018-12-15T075804.200.json
+
+###
+
+DELETE http://localhost:3000/bookings/10000323
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"password":"shaw123"}
+
+<> 2018-12-15T075800.200.json
+
+###
+
+GET http://localhost:3000/bookings/10000323
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"password":"shaw123"}
+
+<> 2018-12-15T075754.200.json
+
+###
+
+GET http://localhost:3000/bookings
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"password":"shaw123"}
+
+<> 2018-12-15T075747.200.json
+
+###
+
+GET http://localhost:3000/bookings/213222
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"password":"shaw123"}
+
+<> 2018-12-15T075655.200.json
+
+###
+
+GET http://localhost:3000/bookings
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"password":"shaw123"}
+
+<> 2018-12-15T075647.200.json
+
+###
+
+DELETE http://localhost:3000/bookings
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"password":"shaw123"}
+
+<> 2018-12-15T075640.404.html
+
+###
+
 DELETE http://localhost:3000/bookings/5bc3c6f501838a05932421c2
 Accept: */*
 Cache-Control: no-cache
@@ -427,110 +537,6 @@ Cache-Control: no-cache
 Content-Type: application/json
 
 <> 2018-10-24T074438.200.json
-
-###
-
-GET http://localhost:3000/bookings/5bc3c04c7bff3205638b8ea1
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-<> 2018-10-24T074431.200.json
-
-###
-
-GET http://localhost:3000/bookings
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-<> 2018-10-24T074422.200.json
-
-###
-
-PUT http://localhost:3000/rooms/5bc3bc94fb6fc0602745615a/price
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"customerID":0,"paymenttype":"Direct","date":20181203,"amount":1,"roomNum":"203","price":30}
-
-<> 2018-10-24T074325.200.json
-
-###
-
-GET http://localhost:3000/rooms/5bc3bc94fb6fc0602745615a/price
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"customerID":0,"paymenttype":"Direct","date":20181203,"amount":1,"roomNum":"203","price":30}
-
-<> 2018-10-24T074314.404.html
-
-###
-
-GET http://localhost:3000/rooms/103
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"customerID":0,"paymenttype":"Direct","date":20181203,"amount":1,"roomNum":"203","price":30}
-
-<> 2018-10-24T074300.200.json
-
-###
-
-GET http://localhost:3000/rooms
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"customerID":0,"paymenttype":"Direct","date":20181203,"amount":1,"roomNum":"203","price":30}
-
-<> 2018-10-24T074253.200.json
-
-###
-
-GET http://localhost:3000/bookings/amount
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"customerID":0,"paymenttype":"Direct","date":20181203,"amount":1,"roomNum":"203","price":30}
-
-<> 2018-10-24T074245.200.json
-
-###
-
-GET http://localhost:3000/bookings
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"customerID":0,"paymenttype":"Direct","date":20181203,"amount":1,"roomNum":"203","price":30}
-
-<> 2018-10-24T074230.200.json
-
-###
-
-POST http://localhost:3000/bookings/10000034
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-{"customerID":0,"paymenttype":"Direct","date":20181203,"amount":1,"roomNum":"203","price":30}
-
-<> 2018-10-24T074223.200.json
-
-###
-
-GET http://localhost:3000/bookings/5bc3c04c7bff3205638b8ea1
-Accept: */*
-Cache-Control: no-cache
-Content-Type: application/json
-
-<> 2018-10-24T074045.200.json
 
 ###
 
