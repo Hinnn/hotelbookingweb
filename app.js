@@ -11,6 +11,11 @@ const bookings = require("./routes/bookings");
 const rooms = require("./routes/rooms");
 const customers = require("./routes/customers");
 var app = express();
+
+var port = process.env.PORT || 3000;
+app.listen(port, function () {
+    console.log("running at localhost:" + port);
+});
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
