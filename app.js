@@ -12,6 +12,7 @@ const rooms = require("./routes/rooms");
 const customers = require("./routes/customers");
 var app = express();
 var cors = require('cors');
+
 var port = process.env.PORT || 3000;
 app.listen(port, function () {
     console.log("running at localhost:" + port);

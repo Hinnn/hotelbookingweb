@@ -5,9 +5,10 @@ let express = require('express');
 let router = express.Router();
 
 // let mongodbUri ='mongodb://YueWang:bookings999@ds131373.mlab.com:31373/bookingsdb';
-let mongodbUri ='mongodb://YueWang:donations999d>@ds231374.mlab.com:31374/heroku_m89b254b';
-//mongoose.connect(mongodbUri);
-mongoose.connect(mongodbUri,{ useNewUrlParser: true });
+let mongodbUri ='mongodb://YueWang:donations999@ds161112.mlab.com:61112/heroku_mpgt8g57';
+
+mongoose.connect(mongodbUri);
+//mongoose.connect(mongodbUri,{ useNewUrlParser: true });
 //mongoose.connect('mongodb://localhost:27017/customersdb');
 
 let db = mongoose.connection;
